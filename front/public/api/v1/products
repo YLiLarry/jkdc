@@ -1,0 +1,22 @@
+{
+   "product": {
+      "id": 0,
+      "fireExtinguishers": [
+         {"id":1, "name":"ABC干粉灭火器", "specification": "1kg", "salePrice":"1元","repairPrice":"1元"},
+         {"id":1, "name":"ABC干粉灭火器", "specification": "5kg", "salePrice":"1元","repairPrice":"1元"},
+         {"id":1, "name":"二氧化碳灭火器", "specification": "1kg", "salePrice":"1元","repairPrice":"1元"},
+         {"id":1, "name":"推车式灭火器", "specification": "1kg", "salePrice":"1元","repairPrice":"1元"}
+      ],
+      "alarms":[
+         {"id":1, "name":"烟感报警器","salePrice":"1元"},
+         {"id":1, "name":"其它报警器","salePrice":"1元"},
+         {"id":1, "name":"型号A","salePrice":"1元"}
+      ],
+      "signs":[
+         {"id":1,"name":"安全出口标志","specification":"绿色","salePrice":"1元"},
+         {"id":1,"name":"安全出口标志","specification":"红色","salePrice":"1元"},
+         {"id":1,"name":"型号A","specification":"型号A","salePrice":"1元"}
+      ],
+      "test": "test"
+   }
+}

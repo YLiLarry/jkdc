@@ -1,0 +1,62 @@
+#home {
+   #section-1 {
+      position: relative;
+      .btn {
+         position: absolute;
+         right: 5.5%;
+         bottom: 60px;
+      }
+   }
+
+   #section-2 {
+      .card-block {
+         img {
+            border: 1px solid rgba(0,0,0,0.5);
+            width: 100px;
+            height: 100px;
+         }
+         div.text {
+            width: calc(100% - 110px);
+         }
+      }
+   }
+
+   #section-3 {
+      position: relative;
+      #intro {
+         position: absolute;
+         top: 12.5%;
+         left: 5%;
+         z-index: 999;
+         font-size: 1rem;
+      }
+      #client-map {
+         position: relative;
+         height: 75vh;
+      }
+   }
+
+   #section-4 {
+      &>img {
+         width: 100%;
+      }
+      .popover {
+         max-width: 300px;
+         position: relative;
+         &.ask {
+            margin-left: 150px;
+         }
+         &.ans {
+            margin-right: 150px;
+            float: right;
+         }
+      }
+      position: relative;
+      #contact {
+         img {
+            width: 70%;
+            margin: 0.5rem;
+         }
+      }
+   }
+}

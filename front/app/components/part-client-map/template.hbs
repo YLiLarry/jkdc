@@ -1,0 +1,16 @@
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Pvahh0ipVv9mZcHilpv7CXLi"></script> -->
+<!--百度地图容器-->
+<div id="part-client-map">
+   <div id="bmap" class="img-thumbnail"></div>
+   <div id="right">
+      <ul id="client-list" class="list-unstyled p-a">
+         <li class="label label-info m-b p-a-s"><span class="text-small">我们的客户</span></li>
+         {{#each clientList as |client|}}
+            <li> <small>></small> <a> {{client.title}} </a> </li>
+         {{/each}}
+      </ul>
+      <div id="become-client">
+         {{#link-to "root.contact" class="btn btn-primary"}}成为我们的客户{{/link-to}}
+      </div>
+   </div>
+</div>

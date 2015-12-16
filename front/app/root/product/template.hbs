@@ -1,0 +1,84 @@
+<div id="product">
+   {{#if isSearching}}{{else}}
+      <!-- {{part-carousel}} -->
+   {{/if}}
+   <section>
+      <ul class="list-unstyled">
+         <li class="thead-default">
+            <span># 灭火器</span>
+            <span>名称</span>
+            <span>型号</span>
+            <span>销售价</span>
+            <span>维修价</span>
+         </li>
+         {{#if hasFilteredFireExtinguishers}}
+            {{#each filteredFireExtinguishers as |a idx|}}
+               <li>
+                  <span>{{idx}}</span>
+                  <span>{{a.name}}</span>
+                  <span>{{a.specification}}</span>
+                  <span>{{a.salePrice}}</span>
+                  <span>{{a.repairPrice}}</span>
+               </li>
+            {{/each}}
+         {{else}}
+            <li class="m-a">
+               <i class="fa fa-exclamation-triangle"></i>
+               <small>没有相关产品</small>
+            </li>
+         {{/if}}
+      </ul>
+   </section>
+   <section>
+      <ul class="list-unstyled">
+         <li class="thead-default">
+            <span># 报警器</span>
+            <span>名称</span>
+            <span>型号</span>
+            <span>价格</span>
+         </li>
+         {{#if hasFilteredAlarms}}
+            {{#each filteredAlarms as |a idx|}}
+               <li>
+                  <span>{{idx}}</span>
+                  <span>{{a.name}}</span>
+                  <span>{{a.specification}}</span>
+                  <span>{{a.salePrice}}</span>
+               </li>
+            {{/each}}
+         {{else}}
+            <li class="m-a">
+               <i class="fa fa-exclamation-triangle"></i>
+               <small>没有相关产品</small>
+            </li>
+         {{/if}}
+      </ul>
+   </section>
+   <section>
+      <ul class="list-unstyled">
+         <li class="thead-default">
+            <span># 其它</span>
+            <span>名称</span>
+            <span>型号</span>
+            <span>价格</span>
+         </li>
+         {{#if hasFilteredSigns}}
+            {{#each filteredSigns as |a idx|}}
+               <li>
+                  <span>{{idx}}</span>
+                  <span>{{a.name}}</span>
+                  <span>{{a.specification}}</span>
+                  <span>{{a.salePrice}}</span>
+               </li>
+            {{/each}}
+         {{else}}
+            <li class="m-a">
+               <i class="fa fa-exclamation-triangle"></i>
+               <small>没有相关产品</small>
+            </li>
+         {{/if}}
+      </ul>
+   </section>
+   <div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>

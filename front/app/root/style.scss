@@ -1,0 +1,45 @@
+footer {
+   margin-top: 2rem;
+   padding: 0.5rem;
+   font-size: 0.9rem;
+   min-height: 3rem;
+   color: $gray;
+   width: 100%;
+   /*background-color: $gray-lightest;*/
+   ul {
+      display: inline;
+   }
+   li {
+      display: inline;
+   }
+}
+#root-body {
+   padding-top: 54px;
+}
+
+section {
+   margin-bottom: 1rem;
+   h4 {
+      margin: 1rem;
+   }
+   h4.underlined {
+      border-bottom: 1px solid $gray-lighter;
+      padding-bottom: 0.5rem;
+   }
+}
+
+a {
+   color: darken($brand-primary, 15%);
+}
+
+a:hover {
+   color: darken($brand-primary, 20%);
+}
+
+img.full {
+   width: 100%;
+}
+
+.text-small {
+   font-size: 0.9rem;
+}

@@ -1,0 +1,37 @@
+#part-client-map {
+   #bmap {
+      .anchorBL {
+         display: none;
+      }
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+   }
+   #right {
+      width: 300px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow-y: scroll;
+      #client-list {
+         color: white;
+         height: 100%;
+         background-color: rgba(0,0,0,0.6);
+         margin-bottom: 0;
+         li {
+            a {
+               color: white;
+            }
+         }
+      }
+      #become-client {
+         width: 100%;
+         position: absolute;
+         bottom: 2rem;
+         text-align: center;
+      }
+   }
+}
