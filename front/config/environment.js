@@ -15,7 +15,8 @@ module.exports = function(environment) {
       contentSecurityPolicy: {
          "script-src": "'self' 'unsafe-eval' 'unsafe-inline' " +
                        "http://*.bdimg.com/ " +
-                       "http://*.baidu.com/ ",
+                       "http://*.baidu.com/ " +
+                       "192.99.69.252 ",
          "style-src": "'self' 'unsafe-inline' " +
                       "http://*.baidu.com/ " +
                       "http://*.bdimg.com/ ",
